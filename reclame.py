@@ -19,9 +19,9 @@ def laag_en_hoog(mijn_lijst):
 
 def gemiddelde(mijn_lijst):
     bedrag = sum(mijn_lijst) / len(mijn_lijst)
-    #Opgave 9: return waarde
+    #Opgave 9: return bedrag
     uitvoer = "De gemiddelde inkomsten deze week zijn {0} euro.".format(bedrag)
-    #In de nieuwere versies zou dit het moeten zijn: f"De gemiddelde inkomsten van deze week zijn {waarde} euro."
+    #In de nieuwere versies zou dit het moeten zijn: f"De gemiddelde inkomsten van deze week zijn {bedrag} euro."
     return uitvoer
 
 def meervoudig(invoer_lijst):
@@ -32,6 +32,3 @@ def combinatie(invoer_lijst_2):
     korte_lijst = laag_en_hoog(invoer_lijst_2)
     uitvoer = mijn_functie_2(*korte_lijst)
     return uitvoer
-
-teruggeefwaarde = combinatie([10,5,3,2,1,2,9])
-print(teruggeefwaarde)
